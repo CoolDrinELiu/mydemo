@@ -29,6 +29,7 @@ db/schema.rb
 .rvmrc
 /log/*.log
 /config/database.yml
+/config/secrets.yml
 /tmp
 *.swp
 /public/upload
@@ -48,5 +49,4 @@ test/*
 doc/*
 config/redis.yml
 public/.DS_Store
-bin/*
 public/assets

@@ -1,0 +1,22 @@
+default: &default
+  adapter: mysql2
+  reconnect: false
+  pool: 5
+  username: ***
+  password: ***
+  host: 127.0.0.1
+  port: 3306
+  encoding: utf8mb4
+  collation: utf8mb4_unicode_ci
+
+development:
+  <<: *default
+  database: mydemo_development
+
+test:
+  <<: *default
+  database: mydemo_test
+
+production:
+  <<: *default
+  database: mydemo_production
